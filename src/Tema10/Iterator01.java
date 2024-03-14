@@ -51,5 +51,6 @@ public class Iterator01 {
         lista03.removeAll(lista03);
         System.out.println("Lista:"+lista03);
         System.out.println(lista03.size());
+
     }
     }
