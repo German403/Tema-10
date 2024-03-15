@@ -26,6 +26,13 @@ public class Comunidades_ordenadas {
         España.put("Principado de Asturias", "Oviedo");
         España.put("País Vasco", "Vitoria");
 
+        /*
+        Otro ejercicio DAM1:
+        Añadir alumno
+        eliminar alumno
+        mostrar todos los alumnos
+        Usar ArrayList
+         */
 
     }
 }
