@@ -1,6 +1,5 @@
 package Tema10;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class Iterator01 {
 
@@ -48,9 +47,39 @@ public class Iterator01 {
         System.out.println(lista03.size());
 
         //Eliminar todos los elementos de la lista
-        lista03.removeAll(lista03);
+        //lista03.removeAll(lista03);
         System.out.println("Lista:"+lista03);
         System.out.println(lista03.size());
+
+        //metodo contains
+        boolean contiene = false;
+        contiene = lista03.contains("Sara Gonzalez");
+        System.out.println("Valor del boolean contiene: "+contiene);
+
+        //ordenar colecciones
+        Collections.sort(lista03);
+        System.out.println("Lista 3 ordenada: "+lista03);
+
+        ArrayList<Integer> lista04 = new ArrayList<Integer>();
+        lista04.add(5);
+        lista04.add(7);
+        lista04.add(3);
+        Collections.sort(lista04, Integer::compareTo);
+        System.out.println("Lista 4 ordenada: "+lista04);
+
+        Comparator<Integer> comparador = Collections.reverseOrder();
+        Collections.sort(lista04, comparador);
+        System.out.println("Lista 4 ordenada de forma inversa: "+lista04);
+
+        ArrayList<Integer> lista04b = new ArrayList<>(List.of(5, 7, 3, -1, -5));
+        lista04b.sort(Integer::compareTo);
+        System.out.println("Lista 4 ordenada: "+lista04b);
+        lista04b.sort(comparador);
+        System.out.println("Lista 4 ordenada de forma inversa: "+lista04b);
+
+        //copiar valores en una lista
+        List<String> lista05 = Collections.nCopies(5, "Hola");
+        System.out.println("Lista repetida: "+lista05);
 
     }
     }
