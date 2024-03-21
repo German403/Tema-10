@@ -12,5 +12,10 @@ public class Fechas {
 
         LocalDate fechaNacimiento = LocalDate.parse("2009-03-01");
         System.out.println("Formato Java.Time: "+fechaNacimiento);
+        LocalTime ahora = LocalTime.now();
+        System.out.println("Fecha actual: "+ahora);
+
+        LocalDateTime fecha1 = LocalDateTime.parse("2000-02-21T11:54:01.185");
+        System.out.println("Fecha de reunion: "+fecha1);
     }
 }
